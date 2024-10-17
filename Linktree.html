@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Linktree Personalizado</title>
+    <link rel="stylesheet" href="linktree.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    /* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXwZ8W_BoGJ3shUU7P0W5lrn2OD1HEVQv8zA&s);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Foto de perfil */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+/* Título y subtítulo */
+h1 {
+    font-size: 2rem;
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+/* Enlaces */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.link-button {
+    display: block;
+    padding: 15px;
+    background-color: #1DA1F2; /* Cambia el color si lo deseas */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.link-button:hover {
+    background-color: #0B7ABF; /* Color al pasar el cursor */
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <!-- Foto de perfil -->
+        <img src="Images_Index/Perfil.jpeg" alt="Foto de Perfil" class="profile-pic">
+
+        <!-- Título y subtítulo -->
+        <h1>Valentin Gonzalez</h1>
+        <h2>Bienvenido a mi Linktree!
+            Actualmente estudiante de Licenciatura en Gestion de Tecnologias de la Informacion, <p>
+            Former IT y Analista SAP Ariba <p>
+        </h2>
+
+        <!-- Lista de enlaces -->
+        <div class="links">
+            <a href="IDENTIKIT/Identikit.html" class="link-button">Mi Página Web</a>
+            <a href="pagina2.html" class="link-button">Segunda Página Web</a>
+            <a href="pagina3.html" class="link-button">Tercera Página Web</a>
+        </div>
+    </div>
+</body>
+</html>
