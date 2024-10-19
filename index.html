@@ -5,20 +5,26 @@
     <title>Mi Linktree Personalizado</title>
     <link rel="stylesheet" href="linktree.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Incluir Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <style>
     /* Estilos generales */
+/* Estilos generales */
 body {
     margin: 0;
     padding: 0;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXwZ8W_BoGJ3shUU7P0W5lrn2OD1HEVQv8zA&s);
+    background-image: url(Images_Index/Background_Linktree.jpeg);
     font-family: Arial, sans-serif;
 }
 
+/* Contenedor principal */
 .container {
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
     padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+    color: #ffffff;
 }
 
 /* Foto de perfil */
@@ -28,23 +34,30 @@ body {
     border-radius: 50%;
     object-fit: cover;
     margin-top: 20px;
+    border: 3px solid #ffffff;
 }
 
 /* Título y subtítulo */
 h1 {
     font-size: 2rem;
     margin-top: 10px;
-    color: #ffffff;
     font-weight: bold;
 }
 
 h2 {
-    font-size: 1.2rem;
-    font-weight: normal;
-    color: #ffffff;
-    margin-bottom: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
+p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+
+/* Enlaces */
 /* Enlaces */
 .links {
     display: flex;
@@ -53,19 +66,68 @@ h2 {
 }
 
 .link-button {
-    display: block;
+    display: flex;
+    align-items: center; /* Alinea verticalmente los íconos y el texto */
     padding: 15px;
-    background-color: #1DA1F2; /* Cambia el color si lo deseas */
+    background-color: #1DA1F2;
     color: #ffffff;
     text-decoration: none;
     border-radius: 8px;
     font-size: 1.1rem;
+    font-weight: bold;
+    position: relative; /* Necesario para posicionar el texto en el centro */
     transition: background-color 0.3s ease;
 }
 
-.link-button:hover {
-    background-color: #0B7ABF; /* Color al pasar el cursor */
+/* Texto centrado */
+.link-button span {
+    margin: 0 auto; /* Hace que el texto quede centrado */
 }
+
+/* Íconos */
+.link-button i {
+    position: absolute;
+    left: 15px; /* Posiciona el ícono a la izquierda del botón */
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover en los botones */
+.link-button:hover {
+    background-color: #0B7ABF;
+}
+
+/* Efecto hover en los íconos */
+.link-button:hover i {
+    transform: scale(1.3);
+}
+
+
+/* Estilos para los íconos en los enlaces */
+.link-button i {
+    margin-right: 15px; /* Espacio entre el ícono y el texto */
+    font-size: 1.5rem; /* Tamaño base del ícono */
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover en los íconos */
+.link-button:hover i {
+    transform: scale(1.3);
+}
+
+
+/* Estilos para los íconos en los enlaces */
+.link-button i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover en los íconos */
+.link-button:hover i {
+    transform: scale(1.3);
+}
+
 </style>
 </head>
 <body>
@@ -75,17 +137,25 @@ h2 {
 
         <!-- Título y subtítulo -->
         <h1>Valentin Gonzalez</h1>
-        <h2>Bienvenido a mi Linktree!
-            Actualmente estudiante de Licenciatura en Gestion de Tecnologias de la Informacion, <p>
-            Former IT y Analista SAP Ariba <p>
-        </h2>
+        <h2>Bienvenido a mi Linktree!</h2>
+        <p>
+            Actualmente estudiante de Licenciatura en Gestión de Tecnologías de la Información,<br>
+            Former IT y Analista SAP Ariba
+        </p>
 
         <!-- Lista de enlaces -->
         <div class="links">
-            <a href="IDENTIKIT/Identikit.html" class="link-button">Mi Página Web</a>
-            <a href="pagina2.html" class="link-button">Segunda Página Web</a>
-            <a href="pagina3.html" class="link-button">Tercera Página Web</a>
+            <a href="IDENTIKIT/Identikit.html" class="link-button">
+                <i class="fas fa-home"></i> <span>Mi Página Web</span>
+            </a>
+            <a href="pagina2.html" class="link-button">
+                <i class="fas fa-globe"></i> <span>Segunda Página Web</span>
+            </a>
+            <a href="pagina3.html" class="link-button">
+                <i class="fas fa-envelope"></i> <span>Tercera Página Web</span>
+            </a>
         </div>
+        
     </div>
 </body>
 </html>
